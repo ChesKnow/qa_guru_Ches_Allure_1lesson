@@ -1,5 +1,3 @@
-import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
@@ -14,7 +12,7 @@ public class LambdaStepsForIssueTabTest {
 
     @Test
     public void LambdaStepsDescribed() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
+        //SelenideLogger.addListener("allure", new AllureSelenide());
 
         step("Открываем страницу браузера \"https://github.com\"", () -> {
             open("https://github.com/");
